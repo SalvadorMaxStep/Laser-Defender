@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pathfinder : MonoBehaviour
 {
     EnemySpawner enemySpawner;
-    WaveConfigSO waveConfig;
+    [SerializeField] WaveConfigSO waveConfig;
     List<Transform> waypoints;
     int waypointIndex = 0;
    
