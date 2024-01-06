@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95309a10405e61b4a92e56e18b9887da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLooping: 1
   waveConfig:
   - {fileID: 11400000, guid: 04f89dfb3afd34c4193e2f5690927790, type: 2}
   - {fileID: 11400000, guid: d8fb485e13cde4543b9bcc4e6f1b58df, type: 2}
@@ -387,6 +388,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5367798830944615920, guid: 08f934b0e8563904cb8172bb16a9b1ff, type: 3}
+      propertyPath: m_Radius
+      value: 0.4161017
+      objectReference: {fileID: 0}
+    - target: {fileID: -5367798830944615920, guid: 08f934b0e8563904cb8172bb16a9b1ff, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.015872717
+      objectReference: {fileID: 0}
     - target: {fileID: 2877919839496650051, guid: 08f934b0e8563904cb8172bb16a9b1ff, type: 3}
       propertyPath: moveSpeed
       value: 7
