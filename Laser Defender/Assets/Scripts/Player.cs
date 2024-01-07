@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements.Experimental;
 
 public class NewBehaviourScript : MonoBehaviour
 {   
     Vector2 maxBounds;
     Vector2 minBounds;
     Vector2 rawInput;
+    Shooter shooter;
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float paddingLeft;
     [SerializeField] float paddingRight;
     [SerializeField] float paddingTop;
     [SerializeField] float paddingBottom;
+
+    void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
 
     void Start()
     {
@@ -37,6 +44,14 @@ public class NewBehaviourScript : MonoBehaviour
     {
         rawInput = value.Get<Vector2>();
 
+    }
+
+    void OnFire(InputValue value)
+    {
+        if(shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
     void InitBounds()
     {
