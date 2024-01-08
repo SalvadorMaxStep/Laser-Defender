@@ -51,6 +51,7 @@ public class NewBehaviourScript : MonoBehaviour
         if(shooter != null)
         {
             shooter.isFiring = value.isPressed;
+            Debug.Log("Firing: " + shooter.isFiring);
         }
     }
     void InitBounds()

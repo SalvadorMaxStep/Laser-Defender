@@ -47,7 +47,7 @@ public class Shooter : MonoBehaviour
                 rb.velocity = transform.up * projectileSpeed;
             }
             Destroy(instance, projectileLifetime);
-            yield return new WaitForSeconds(projectileLifetime);
+            yield return new WaitForSeconds(firingRate);
         }
      }
 }
