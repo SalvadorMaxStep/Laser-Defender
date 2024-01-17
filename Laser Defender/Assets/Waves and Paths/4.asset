@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6b976b587e1a544aa5cde331d17ca9, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  enemyPrefabs: []
+  enemyPrefabs:
+  - {fileID: 1578693545081783395, guid: b8fe31061dd652d4ea4fa8d67c2e1287, type: 3}
+  - {fileID: 7128106682593632115, guid: d9ec366df9e6d55469818bfbe07b44ec, type: 3}
+  - {fileID: 1578693545081783395, guid: b8fe31061dd652d4ea4fa8d67c2e1287, type: 3}
+  - {fileID: 7128106682593632115, guid: d9ec366df9e6d55469818bfbe07b44ec, type: 3}
   pathPrefab: {fileID: 1797520579093604614, guid: 3f676183807dd0b40a92c40cd42e642b, type: 3}
   MoveSpeed: 5
   timeBetweenEnemySpawns: 1
