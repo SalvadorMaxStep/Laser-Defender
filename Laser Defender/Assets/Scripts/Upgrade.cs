@@ -16,7 +16,7 @@ public class Upgrade : MonoBehaviour
     
     void Update()
     {
-        if(scoreKeeper.GetScore() > 500)
+        if(scoreKeeper.GetScore() == 200)
         {
             SpawnUpgrade();
         }
